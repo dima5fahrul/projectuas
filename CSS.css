@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*fonts*/
+
+@font-face{
+	font-family: Aeonik-Regular;
+	src: url("Font/Aeonik-Regular.otf") format('opentype');
+}
+
+@font-face{
+	font-family: Aeonik-Air;
+	src: url("Font/Aeonik-Air.otf") format('opentype');
+}
+
+@font-face{
+	font-family: Aeonik-Black;
+	src: url("Font/Aeonik-Black.otf") format('opentype');
+}
+
+@font-face{
+	font-family: Aeonik-Light;
+	src: url("Font/Aeonik-Light.otf") format('opentype');
+}
+
+@font-face{
+	font-family: Aeonik-Medium;
+	src: url("Font/Aeonik-Medium.otf") format('opentype');
+}
+
+@font-face{
+	font-family: Junior;
+	src: url("Font/Junior.ttf") format('truetype');
+}
+
+
+/*CSS*/
+
+*{
+	font-family: "Aeonik-Regular", sans-serif;
+}
+
+/*Navbar*/
+
+nav{
+	color: #FBFBFB;
+}
+
+nav.sticky {
+   background-color: #FBFBFB;
+}
+
+nav.sticky .navbar-brand {
+   font-size: 2rem;
+   transition: .5s;
+}
+
+nav.sticky .navbar-brand, nav.sticky .navbar-nav .nav-item a {
+   color: #0F0F0F;
+}
+
+nav .navbar-brand, nav .navbar-nav .nav-item a, nav .navbar-nav-scroll {
+   color: #0F0F0F;
+}
+
+nav .navbar-brand {
+    font-family: Junior;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+
+.scroll-down {
+   position: absolute;
+   bottom: 0px;
+   color: #EDEDED;
+   width: auto;
+   opacity: .7;
+}
+
+.scroll-icon {
+   position: absolute;
+   height: 40px;
+   width: 30px;
+}
+
+.scroll-icon::before,
+.scroll-icon::after {
+   content: "";
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   height: 10px;
+   width: 10px;
+   transform: translate(-50%, -100%) rotate(45deg);
+   border: 2px solid #EDEDED;
+   border-top: transparent;
+   border-left: transparent;
+   animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::before {
+   top: 30%;
+   animation-delay: 0.3s;
+   animation: scroll-down 1s ease-in-out infinite;
+}
+
+@keyframes scroll-down {
+   0% {
+      opacity: 0;
+   }
+   30% {
+      opacity: 1;
+   }
+   60% {
+      opacity: 1;
+   }
+   100% {
+      top: 80%;
+      opacity: 0;
+   }
+}
+
+
+
+/*Inspirations*/
+
+.inspiration{
+    overflow: hidden;
+}
+
+.inspiration h1{
+    font-family: Aeonik-Medium;
+}
+
+
+/*Collections*/
+
+.colections{
+    margin-bottom: 200px;
+}
+
+
+/*Footer*/
+
+.footer{
+    overflow: hidden;
+}
+
+.footer .icon{
+    color: #171717;
+}
+
+.inspiration .recomm{
+    color: #171717;
+}
