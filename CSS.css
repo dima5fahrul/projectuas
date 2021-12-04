@@ -155,3 +155,25 @@ nav .navbar-brand {
 .inspiration .recomm{
     color: #171717;
 }
+
+
+
+
+/*About*/
+
+.about .video{
+    padding-top: 30px;
+}
+
+.about .better{
+    padding-top: 30px;
+}
+
+.about .workarea{
+    padding-top: 30px;
+}
+
+.about .quotes{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
